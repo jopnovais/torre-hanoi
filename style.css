@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    margin-top: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.left-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 200px;
+    padding: 5px;
+    background-color: #74d398;
+    border-radius: 5px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.newgame {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 5px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.newgame select {
+    padding: 2px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+.speed {
+    border: 1px solid #fff;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.speed p {
+    font-size: 13px;
+    font-weight: light;
+    color: floralwhite;
+}
+
+#speedRange {
+    width: 100%;
+    height: 6px;
+}
+
+button {
+    border-radius: 9px;
+    padding: 5px 15px;
+    margin: 10px;
+    border-style: none;
+    cursor: pointer;
+
+}
+
+button:hover {
+    background-color: #5db2dd;
+    color: #fff;
+}
+
+.score {
+    display: flex;
+    justify-content: center;
+    margin-left: 240px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+}
+
+.score p {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+.stage {
+    height: 310px;
+    background-color: dimgray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    gap: 10px;
+    padding: 10px;
+}
+
+.tower {
+    width: 230px;
+    height: 300px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.stem {
+    width: 8px;
+    height: 250px;
+    background-color: #000;
+    border-radius: 7px 7px 0 0;
+    position: absolute;
+}
+
+.plate {
+    width: 250px;
+    height: 20px;
+    background-color: red;
+    border-radius: 5px;
+    z-index: 2;
+}
+
+.disc {
+    height: 20px;
+    border-radius: 3px;
+    z-index: 2;
+}
+
+.is-dragging {
+    opacity: 0.3;
+}
